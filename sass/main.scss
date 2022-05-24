@@ -1,0 +1,14 @@
+//ordre d'importation (avec @use)
+//vendors
+
+//base
+@use "base/base";
+//component
+//layout
+//pages
+@use "pages/accueil";
+@use "pages/homepage";
+@use "pages/menus";
+@use "pages/footer";
+
+//themes
