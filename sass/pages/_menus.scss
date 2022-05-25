@@ -32,6 +32,8 @@
         width: 85px;
         background-color: variables.$color-tertiary;
         color: darken(variables.$color-tertiary, 45%);
+        border-radius: 3px;
+        padding:4px;
         display: grid;
         place-items: center;
         right: 13px;
@@ -75,37 +77,78 @@ a {
     color: black;
 }
 
+
 .description {
+   
     position: relative;
     margin-top: -3px;
     padding-top: 6px;
     height: 70px;
     border-radius: 0px 0px 25px 25px;
     background-color: white;
+  
 
-    i {
-        font-size: 2.5ch;
+
+
+
+   i {
+       font-size: 2.7ch;
         position: absolute;
         right: 17px;
-        top: 20px;
+        top: 19px;
+        transform: translateY(-40%);
+   
+   }
+   .fa-solid{
+       margin:0px;
+       color:transparent;
+       background-image:linear-gradient(variables.$color-primary,variables.$color-secondary) ;
+       background-clip: text;
+       -webkit-background-clip:text;
+       opacity: 0;
+       transition: all 300ms ease-in-out;
+     
+       
 
-    }
+   }
+   &:hover .fa-solid{
+       opacity: 1;
+   }
+      
+}
 
-    .fa-solid {
+    
+  
+ 
+  
+      
+
+
+ /*  .fa-solid{
+      
         color: transparent;
         background-image: linear-gradient(0deg,variables.$color-primary,variables.$color-secondary);
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
         transition: .5s ease-in-out;
+       
+       
 
-    }
-
-    &:hover .fa-solid {
-        opacity: 1;
-
-    }
+    }*/
 
 
 
-}
+
+       
+
+    
+  
+  
+
+
+
+
+
+
+
