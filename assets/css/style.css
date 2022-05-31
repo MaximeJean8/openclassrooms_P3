@@ -19,6 +19,36 @@ header .logo {
   padding-top: 10px;
 }
 
+.loader {
+  position: fixed;
+  text-align: center;
+  inset: 0;
+  z-index: 1;
+  background-color: white;
+  opacity: 0.8;
+  height: 100vh;
+  animation: loading 200ms 3s forwards;
+  transform-origin: top;
+}
+.loader i {
+  margin-top: 200px;
+  animation: spin 3s;
+  color: #9356DC;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .location {
   font-size: 1.8vh;
   display: flex;
@@ -168,7 +198,7 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #353535;
 }
 
 .description {
@@ -199,18 +229,100 @@ a {
   opacity: 1;
 }
 
-/*  .fa-solid{
+.entree {
+  margin: 10px 10px 10px 0Px;
+  width: 95%;
+  height: 70px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
+}
 
-       color: transparent;
-       background-image: linear-gradient(0deg,variables.$color-primary,variables.$color-secondary);
-       background-clip: text;
-       -webkit-background-clip: text;
-       opacity: 0;
-       transition: .5s ease-in-out;
+.header {
+  box-shadow: none;
+}
 
+.banner img {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+}
 
+.mealsprice {
+  position: absolute;
+  width: 100%;
+  margin-top: -45px;
+  border-radius: 35px 35px 0 0px;
+  background-color: #F3F3F3;
+  height: 1150px;
+}
+.mealsprice .description2 {
+  display: flex;
+  font-family: shrikhand;
+}
+.mealsprice .description2 i {
+  font-size: 1.9ch;
+  position: absolute;
+  right: 75px;
+  padding-top: 66px;
+  transform: translateY(-40%);
+}
+.mealsprice .description2 .fa-solid {
+  margin: 0px;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+.mealsprice .description2:hover .fa-solid {
+  opacity: 1;
+}
+.mealsprice .description2 h2 {
+  padding: 10px;
+  padding-left: 25px;
+}
+.mealsprice .menus__category {
+  display: flex;
+  /*  padding:10px;*/
+  box-shadow: 4px 4px 4px 0px #c7c9c8;
+  border-radius: 15px;
+  width: 90%;
+  margin: 10px 2px 2Px 10px;
+  height: 61px;
+  background-color: white;
+  overflow: hidden;
+}
+.mealsprice .menus__category:hover .check__price {
+  margin-right: 0;
+}
+.mealsprice .menus__category .menu-items__description {
+  padding: 10px;
+}
+.mealsprice .menus__category .menuprice {
+  padding: 10px 15px 0 5px;
+  margin-left: auto;
+  margin-top: 20px;
+  font-weight: 900;
+}
+.mealsprice .menus__category .check__price {
+  width: 65px;
+  margin-right: -65px;
+  background-color: #99E2D0;
+  transition: all 0.5s;
+}
+.mealsprice .menus__category h4, .mealsprice .menus__category p {
+  padding: 2px;
+  margin: 0px;
+}
 
-   }*/
+.footer {
+  position: relative;
+  margin-top: 925px;
+}
+
 footer {
   background-color: #353535;
   color: white;
