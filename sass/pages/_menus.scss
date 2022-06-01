@@ -1,156 +1,200 @@
 @use"../utils/variables";
 @use"../utils/mixins";
+@use"../utils/animation";
 
-.header{
-   box-shadow: none;
+.header {
+    box-shadow: none;
 }
 
-.banner img{
-    display:block;
-    position:relative;
+.banner img {
+    display: block;
+    position: relative;
     width: 100%;
     max-height: 480px;
-    object-fit: cover;  
+    object-fit: cover;
 }
-.mealsprice{
 
-    position:absolute;
-    width:100%;
-    margin-top:-45px;
-    border-radius:35px 35px 0 0px;
+.mealsprice {
+
+    position: absolute;
+    width: 100%;
+    margin-top: -45px;
+    border-radius: 35px 35px 0 0px;
     background-color: #F3F3F3;
     height: 1150px;
 
+    .description2 {
+        display: flex;
+        font-family: shrikhand;
+        h2 {
+            padding: 10px;
+            padding-left: 25px;
+        }
 
+    }
 
-.description2{
-    display:flex;
-    font-family: shrikhand;
-    i {
-        
-        font-size: 1.9ch;
-          position: absolute;
-         right: 75px;
-         padding-top: 66px;
-         transform: translateY(-40%);
+    .menus__category {
+        display: flex;
     
-    }
-    .fa-solid{
-        margin:0px;
-        color:transparent;
-        background-image:linear-gradient(variables.$color-primary,variables.$color-secondary) ;
-        background-clip: text;
-        -webkit-background-clip:text;
-        opacity: 0;
-        transition: all 300ms ease-in-out;
-      
-    }
-    &:hover .fa-solid{
-        opacity: 1;
-    }
-    h2{
-        padding:10px;
-        padding-left:25px;
-    }
-
-}
-
-.menus__category{
-    display:flex;
-  /*  padding:10px;*/
-    @include  mixins.base-shadow;
-    border-radius: 15px;
-    width:90%;
-    margin:10px 2px 2Px 10px ;
-    height: 61px;
-    background-color: white;
-    overflow: hidden;
-    &:hover .check__price{
-        
-        margin-right: 0;
-    }
-    
-
-    
-
-  
-   
-   
-
-    .menu-items__description{
-        padding:10px;
        
-    
-        
-    }
 
-        
-    
-    .menuprice{
-        padding:10px 15px 0 5px;;
-        margin-left:auto;
-        margin-top:20px;
-        font-weight: 900;
-   
-        
-        
-        
-    }
-     .check__price{
+
+
+
+        @include mixins.base-shadow;
+        border-radius: 15px;
+        width: 90%;
+        margin: 15px 2px 2Px 17px;
+        height: 61px;
+        background-color: white;
+        overflow: hidden;
+
+        &:hover .check__price  {
+
+            margin-right: 0;
+            
+            
+                
+            }
          
-        width:65px; 
-        margin-right: -65px;
-        background-color: variables.$color-tertiary;
-        transition: all 0.5s;
-       
-       
-       
+           
+             
+    
+        }
         
 
-    }
-      
-   
-   h4,p{
-       padding:2px;
-       margin:0px;
-   }  
-}
+        }
 
-}
+        .heart2{
+            i {
 
-
-.footer{
-    position: relative;
-    margin-top:925px;
-}
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
+                font-size: 2.5ch;
+                position: absolute;
+                right: 35px;
+                padding-top: 73px;
+                transform: translateY(-40%);
     
-  
-  
+            }
+    
+            .fa-solid {
+                margin: 0px;
+                color: transparent;
+                background-image: linear-gradient(variables.$color-primary, variables.$color-secondary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                opacity: 0;
+                transition: all 300ms ease-in-out;
+    
+            }
+    
+            &:hover .fa-solid {
+                opacity: 1;
+            }
+        }
+        .container{
+            margin-bottom:30px;
+            padding:0px;
+            
+        }
+        .plats{
+            position: relative;
+             margin-left:25px;
+             font-weight:lighter;
+             font-size: small;
+             &::after{
+                content:"";
+                position: absolute;
+                width: 41px;
+                height: 3px;
+                top:19px;
+                left:0px;
+                background-color: variables.$color-tertiary;
+                
+                
+
+             }
+ 
+         }
 
 
 
 
 
 
+
+
+        .menu-items__description {
+            padding: 10px;
+
+
+
+        }
+        .menutitle{
+            font-size: 100;
+            font-weight:600;
+        }
+
+
+
+        .menuprice {
+            padding: 10px 15px 0 5px;
+            margin-left: auto;
+            margin-top: 20px;
+            font-weight: 900;
+
+
+
+
+        }
+
+        .check__price {
+            display: flex;
+            justify-content: center;
+            padding-top: 18px;
+            font-size: 25px;
+            color: white;
+            width: 65px;
+            margin-right: -65px;
+            background-color: variables.$color-tertiary;
+            transition: all 0.5s;
+           
+             
+            
+          
+     
+
+        }
+      
+
+
+
+        h4,p {
+            padding: 2px;
+            margin: 0px;
+        }
+    
+    .menusdetails {
+        font-weight: 100;
+        font-size: medium;
+    }
+
+    .order {
+
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn__1 {
+        padding: 10px 30px 10px 30px;
+    }
+
+
+
+
+.footer {
+    position: relative;
+    margin-top: 1020px;
+} 
 

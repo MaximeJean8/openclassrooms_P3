@@ -1,3 +1,24 @@
+@keyframes loading {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes doublespin {
+  0% {
+    transform: rotate(-200);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.9ch;
@@ -36,19 +57,20 @@ header .logo {
   color: #9356DC;
 }
 
-@keyframes loading {
-  0% {
+/*@keyframes loading {
+  0%{
     transform: scale(1);
   }
-  100% {
+  100%{
     transform: scale(0);
   }
+
 }
-@keyframes spin {
-  to {
+@keyframes spin{
+  to{
     transform: rotate(360deg);
   }
-}
+}*/
 .location {
   font-size: 1.8vh;
   display: flex;
@@ -189,8 +211,7 @@ header .logo {
   width: 100%;
 }
 
-.infos h3,
-p {
+.infos h3 {
   padding: 5px 0px 0px 5px;
   margin: 1px;
   margin-left: 5px;
@@ -209,14 +230,19 @@ a {
   border-radius: 0px 0px 25px 25px;
   background-color: white;
 }
-.description i {
-  font-size: 2.7ch;
+.description p {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.heart i {
+  font-size: 2.8ch;
   position: absolute;
-  right: 17px;
-  top: 19px;
+  right: 18px;
+  top: 32px;
   transform: translateY(-40%);
 }
-.description .fa-solid {
+.heart .fa-solid {
   margin: 0px;
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
@@ -225,7 +251,7 @@ a {
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
-.description:hover .fa-solid {
+.heart:hover .fa-solid {
   opacity: 1;
 }
 
@@ -261,14 +287,32 @@ a {
   display: flex;
   font-family: shrikhand;
 }
-.mealsprice .description2 i {
-  font-size: 1.9ch;
+.mealsprice .description2 h2 {
+  padding: 10px;
+  padding-left: 25px;
+}
+.mealsprice .menus__category {
+  display: flex;
+  box-shadow: 4px 4px 4px 0px #c7c9c8;
+  border-radius: 15px;
+  width: 90%;
+  margin: 15px 2px 2Px 17px;
+  height: 61px;
+  background-color: white;
+  overflow: hidden;
+}
+.mealsprice .menus__category:hover .check__price {
+  margin-right: 0;
+}
+
+.heart2 i {
+  font-size: 2.5ch;
   position: absolute;
-  right: 75px;
-  padding-top: 66px;
+  right: 35px;
+  padding-top: 73px;
   transform: translateY(-40%);
 }
-.mealsprice .description2 .fa-solid {
+.heart2 .fa-solid {
   margin: 0px;
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
@@ -277,50 +321,83 @@ a {
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
-.mealsprice .description2:hover .fa-solid {
+.heart2:hover .fa-solid {
   opacity: 1;
 }
-.mealsprice .description2 h2 {
+
+.container {
+  margin-bottom: 30px;
+  padding: 0px;
+}
+
+.plats {
+  position: relative;
+  margin-left: 25px;
+  font-weight: lighter;
+  font-size: small;
+}
+.plats::after {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 3px;
+  top: 19px;
+  left: 0px;
+  background-color: #99E2D0;
+}
+
+.menu-items__description {
   padding: 10px;
-  padding-left: 25px;
 }
-.mealsprice .menus__category {
-  display: flex;
-  /*  padding:10px;*/
-  box-shadow: 4px 4px 4px 0px #c7c9c8;
-  border-radius: 15px;
-  width: 90%;
-  margin: 10px 2px 2Px 10px;
-  height: 61px;
-  background-color: white;
-  overflow: hidden;
+
+.menutitle {
+  font-size: 100;
+  font-weight: 600;
 }
-.mealsprice .menus__category:hover .check__price {
-  margin-right: 0;
-}
-.mealsprice .menus__category .menu-items__description {
-  padding: 10px;
-}
-.mealsprice .menus__category .menuprice {
+
+.menuprice {
   padding: 10px 15px 0 5px;
   margin-left: auto;
   margin-top: 20px;
   font-weight: 900;
 }
-.mealsprice .menus__category .check__price {
+
+.check__price {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  font-size: 25px;
+  color: white;
   width: 65px;
   margin-right: -65px;
   background-color: #99E2D0;
   transition: all 0.5s;
 }
-.mealsprice .menus__category h4, .mealsprice .menus__category p {
+
+h4, p {
   padding: 2px;
   margin: 0px;
 }
 
+.menusdetails {
+  font-weight: 100;
+  font-size: medium;
+}
+
+.order {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__1 {
+  padding: 10px 30px 10px 30px;
+}
+
 .footer {
   position: relative;
-  margin-top: 925px;
+  margin-top: 1020px;
 }
 
 footer {
