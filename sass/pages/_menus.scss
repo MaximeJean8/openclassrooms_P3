@@ -1,6 +1,6 @@
 @use"../utils/variables";
 @use"../utils/mixins";
-@use"../utils/animation";
+@use"../utils/animations";
 
 .header {
     box-shadow: none;
@@ -35,12 +35,6 @@
 
     .menus__category {
         display: flex;
-    
-       
-
-
-
-
         @include mixins.base-shadow;
         border-radius: 15px;
         width: 90%;
@@ -48,22 +42,33 @@
         height: 61px;
         background-color: white;
         overflow: hidden;
+       
 
-        &:hover .check__price  {
+        &:hover .check__price{
 
             margin-right: 0;
-            
-            
+          
+           
+           
                 
+               
             }
+           
+       
+        
+        
+        }
          
            
-             
+           
     
         }
+      
         
 
-        }
+        
+      
+    
 
         .heart2{
             i {
@@ -125,6 +130,7 @@
 
         .menu-items__description {
             padding: 10px;
+           
 
 
 
@@ -150,7 +156,7 @@
         .check__price {
             display: flex;
             justify-content: center;
-            padding-top: 18px;
+            align-items: center;
             font-size: 25px;
             color: white;
             width: 65px;
@@ -158,17 +164,29 @@
             background-color: variables.$color-tertiary;
             transition: all 0.5s;
            
+          
+           
+        
+           
+          
+          
+           
              
             
           
      
 
         }
+        
+    
+      
       
 
 
 
         h4,p {
+           
+            
             padding: 2px;
             margin: 0px;
         }
@@ -198,3 +216,6 @@
     margin-top: 1020px;
 } 
 
+
+
+    

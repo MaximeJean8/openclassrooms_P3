@@ -13,9 +13,9 @@
       transform: rotate(360deg);
     }
   } 
-  @keyframes doublespin  {
+  @keyframes quarter-spin  {
     0%{
-      transform:rotate(-200)
+      transform:rotate(-250)
     }
     100%{
       transform: rotate(0);
