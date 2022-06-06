@@ -56,15 +56,15 @@
         white-space: nowrap;
         overflow: hidden;
        
-        &:hover .check__price{
+        &:hover {
+        .check__price{
              margin-right: 0;
-                
-            }
-    
         }
-        
-        }
-    
+    i {
+        animation:quarter-spin 1s ease;
+
+    } }
+        }}
         .heart2{
             i {
                 font-size: 2.5ch;
@@ -143,6 +143,9 @@
             margin-right: -65px;
             background-color: variables.$color-tertiary;
             transition: all 0.5s;
+          
+            
+            
     
         }
     
@@ -181,10 +184,17 @@
         }
     }
 
-.footer {
+.footer  {
     position: relative;
-    margin-top: 1020px;
+    margin-top: 1020px; 
 } 
+.footer1{
+    position:relative;
+    margin-top:1100px;
+
+}
+
+
 
 
 

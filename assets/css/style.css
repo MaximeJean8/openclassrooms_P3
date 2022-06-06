@@ -13,10 +13,10 @@
 }
 @keyframes quarter-spin {
   0% {
-    transform: rotate(-250);
+    transform: rotate(-270deg);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 }
 body {
@@ -326,6 +326,9 @@ a {
 .mealsprice .menus__category:hover .check__price {
   margin-right: 0;
 }
+.mealsprice .menus__category:hover i {
+  animation: quarter-spin 1s ease;
+}
 
 .heart2 i {
   font-size: 2.5ch;
@@ -438,6 +441,11 @@ h4, p {
 .footer {
   position: relative;
   margin-top: 1020px;
+}
+
+.footer1 {
+  position: relative;
+  margin-top: 1100px;
 }
 
 footer {
