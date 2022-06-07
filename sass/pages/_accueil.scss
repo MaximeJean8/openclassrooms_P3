@@ -63,8 +63,10 @@
 
 .operation {
     counter-reset: step;
-    padding: 25px 15px 15px ;
-    position: relative;
+    padding: 25px 15px 15px  ;
+    width:100%;
+   
+   
    
     
     & h1 {
@@ -75,18 +77,31 @@
         
          padding-left: 5px;
          margin-bottom: 50px;
-    }
+       
+        
+ 
 
+ 
+    
+        
+    
    
 
 
 }
+}
+
+
+
+
+
 
 
 .operation__step {
     display: flex;
     text-align: center;
     align-items: center;
+    
     
 
     &.purpleordercard {
