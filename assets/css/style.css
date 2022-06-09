@@ -19,6 +19,14 @@
     transform: rotate(0deg);
   }
 }
+@keyframes slideup {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.9ch;
@@ -113,7 +121,6 @@ header .logo {
 .operation {
   counter-reset: step;
   padding: 25px 15px 15px;
-  width: 100%;
 }
 .operation h1 {
   padding-top: 5px;
@@ -135,7 +142,6 @@ header .logo {
   border-radius: 20px;
   padding: 20px;
   margin-top: 15px;
-  width: 85%;
   height: 25px;
 }
 .operation__step.purpleordercard {
@@ -203,7 +209,6 @@ header .logo {
   box-shadow: 4px 4px 4px 0px #c7c9c8;
   padding-bottom: 50px;
   border-radius: 25px 25px 25px 25px;
-  width: 89%;
   height: 215px;
   margin: 20px;
 }
@@ -292,7 +297,7 @@ a {
   display: block;
   position: relative;
   width: 100%;
-  max-height: 480px;
+  max-height: 280px;
   object-fit: cover;
 }
 
@@ -316,12 +321,13 @@ a {
   display: flex;
   box-shadow: 4px 4px 4px 0px #c7c9c8;
   border-radius: 15px;
-  width: 90%;
-  margin: 15px 2px 2Px 17px;
+  /* width: 90%;*/
+  margin: 13px 10px 0 10px;
   height: 61px;
   background-color: white;
   white-space: nowrap;
   overflow: hidden;
+  animation: slideup 1s forwards;
 }
 .mealsprice .menus__category:hover .check__price {
   margin-right: 0;
