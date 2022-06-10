@@ -12,29 +12,19 @@
 }
 
 .explorer {
-    
+
     text-align: center;
     background-color: #fafafa;
     padding: 10px;
     height: 225px;
-    & p{
+
+    & p {
         font-weight: 300;
         opacity: 0.5;
-    } 
-   
-  
+    }
+
+
 }
-
-
-
-
-
-
-   
-    
-
-    
-
 
 
 .btn__1 {
@@ -63,19 +53,20 @@
 
 .operation {
     counter-reset: step;
-    padding: 25px 15px 15px  ;
+    padding: 25px 15px 15px;
 
-    
+
     & h1 {
         padding-top: 5px;
-       font-weight: 900; 
+        font-weight: 900;
     }
-    ol {
-        
-         padding-left: 5px;
-         margin-bottom: 50px;
 
-}
+    ol {
+
+        padding-left: 5px;
+        margin-bottom: 50px;
+
+    }
 
 
 }
@@ -91,9 +82,9 @@
     display: flex;
     text-align: center;
     align-items: center;
-    
-    
-    
+
+
+
 
     &.purpleordercard {
         background: #f5edff;
@@ -146,13 +137,13 @@
 
 
 
-} 
+}
 
 
 .menus {
     background-color: #f6f6f6;
     height: 1350px;
-  
+
 
 }
 
@@ -182,7 +173,7 @@
         background-color: variables.$color-tertiary;
         color: darken(variables.$color-tertiary, 45%);
         border-radius: 3px;
-        padding:4px;
+        padding: 4px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -217,7 +208,7 @@
     padding: 5px 0px 0px 5px;
     margin: 1px;
     margin-left: 5px;
-    
+
 }
 
 a {
@@ -228,68 +219,72 @@ a {
 
 
 .description {
-   
+
     position: relative;
     margin-top: -3px;
     padding-top: 6px;
     height: 70px;
     border-radius: 0px 0px 25px 25px;
     background-color: white;
-    & p{  
-        padding-left:10px;
-        padding-top:5px;
+
+    & p {
+        padding-left: 10px;
+        padding-top: 5px;
         opacity: 0.9;
         font-weight: 100;
-       
-        
+
+
     }
-    & h3{
+
+    & h3 {
         font-weight: 900;
 
     }
-   
+
+
+}
+
+
+
+
+
+
+
+.heart {
+    i {
+
+
+
+        font-size: 2.8ch;
+        position: absolute;
+        right: 18px;
+        top: 32px;
+        transform: translateY(-40%);
+    }
+
+
+    .fa-solid {
+        margin: 0px;
+        color: transparent;
+        background-image: linear-gradient(variables.$color-primary, variables.$color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+
+
 
     }
 
-  
-
-
-
-
-  
-.heart{
-    i{
-    
-    
-    
-     font-size: 2.8ch;
-     position: absolute;
-     right: 18px;
-     top: 32px;
-     transform: translateY(-40%);
+    &:hover .fa-solid {
+        opacity: 1;
     }
 
-
-.fa-solid{
-    margin:0px;
-    color:transparent;
-    background-image:linear-gradient(variables.$color-primary,variables.$color-secondary) ;
-    background-clip: text;
-    -webkit-background-clip:text;
-    opacity: 0;
-    transition: all 300ms ease-in-out;
-  
-    
-
-}
-&:hover .fa-solid{
-    opacity: 1;
 }
 
-}
-.entree{
-    margin:10px 10px 10px 0Px;
-    width:95%;
+.entree {
+    margin: 10px 10px 10px 0Px;
+    width: 95%;
     height: 70px;
     border-radius: 10px 10px 10px 10px;
     background-color: white;
