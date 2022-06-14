@@ -126,7 +126,6 @@
 
     i.fas {
         color: grey;
-
         margin: 0px 15px 0px 15px;
 
         &.fa-store {
@@ -212,9 +211,8 @@
 }
 
 a {
-    text-decoration: none;
-
-    color: variables.$color-dark;
+   text-decoration: none;
+   color: variables.$color-dark;
 }
 
 
